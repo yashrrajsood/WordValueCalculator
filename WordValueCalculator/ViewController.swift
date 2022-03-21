@@ -17,17 +17,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+
         self.wordInputTextFeild.delegate = self
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
         gradientLayer.colors = [UIColor(red: 0.29, green: 0.42, blue: 0.72, alpha: 1.00).cgColor, UIColor(red: 0.09, green: 0.16, blue: 0.28, alpha: 1.00).cgColor]
         
         wordInputTextFeild.attributedPlaceholder = NSAttributedString(
-            string: "Enter name/date here",
+            string: "Enter Name Here",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
         )
         
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -35,7 +42,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-    
     
     @IBAction func calculateNumericalValue(_ sender: Any? = nil) {
         if (wordInputTextFeild.text != ""){
@@ -50,12 +56,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
             numberTotalLabel.text = String(total)
             singleDigitSum(received: total)
         }else{
-            let alert = UIAlertController(title: "Error", message: "Please enter something in the field below", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Error", message: "Please enter a name in the field below", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: becomeRespond)
             numberTotalLabel.text = "--"
             numerologyTotalLabel.text = "-"
         }
+    }
+    
+    func becomeRespond(){
+        wordInputTextFeild.becomeFirstResponder()
     }
 
     func singleDigitSum(received: Int){
@@ -71,8 +81,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         numerologyTotalLabel.text = "No." + String(sum)
     }
-    
-    
-    
     
 }

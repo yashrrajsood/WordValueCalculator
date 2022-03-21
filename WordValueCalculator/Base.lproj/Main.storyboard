@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WordValueCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavebackground" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-PL-xlx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dlV-PL-xlx" secondAttribute="height" multiplier="138:193" id="WSs-6v-v6C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljD-ee-aS8">
+                                <rect key="frame" x="0.0" y="71" width="414" height="85.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="73"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PI-kL-maa">
+                                <rect key="frame" x="58" y="748" width="298" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="w1o-Eq-uR0"/>
+                                </constraints>
+                                <color key="tintColor" red="0.19607841970000001" green="0.45098042490000001" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateNumericalValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWo-Ap-wAS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numerology Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAM-vY-avd">
+                                <rect key="frame" x="0.0" y="287" width="414" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Za-GT-UjH">
+                                <rect key="frame" x="0.0" y="225" width="414" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVn-ws-CL3">
+                                <rect key="frame" x="0.0" y="168" width="414" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JPg-28-709">
+                                <rect key="frame" x="8" y="384" width="398" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GVn-ws-CL3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1t2-uJ-ZJ0"/>
+                            <constraint firstItem="ljD-ee-aS8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2M6-DX-G6T"/>
+                            <constraint firstItem="ljD-ee-aS8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="3C0-7X-DJR"/>
+                            <constraint firstItem="JPg-28-709" firstAttribute="top" secondItem="aAM-vY-avd" secondAttribute="bottom" constant="77" id="7nb-jP-KJc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5PI-kL-maa" secondAttribute="trailing" constant="58" id="8Uj-P0-WQe"/>
+                            <constraint firstItem="JPg-28-709" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Ea1-7j-rvn"/>
+                            <constraint firstItem="6Za-GT-UjH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L38-M0-1cq"/>
+                            <constraint firstItem="GVn-ws-CL3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LIi-HQ-0MI"/>
+                            <constraint firstItem="5PI-kL-maa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="d5o-R3-9Zh"/>
+                            <constraint firstItem="aAM-vY-avd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dKw-7w-rVU"/>
+                            <constraint firstItem="dlV-PL-xlx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fTP-BW-qVz"/>
+                            <constraint firstItem="6Za-GT-UjH" firstAttribute="top" secondItem="GVn-ws-CL3" secondAttribute="bottom" constant="29" id="ixI-0n-VtA"/>
+                            <constraint firstItem="aAM-vY-avd" firstAttribute="top" secondItem="6Za-GT-UjH" secondAttribute="bottom" constant="8" symbolic="YES" id="mym-LX-qYX"/>
+                            <constraint firstItem="6Za-GT-UjH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pda-oC-u7a"/>
+                            <constraint firstItem="GVn-ws-CL3" firstAttribute="top" secondItem="ljD-ee-aS8" secondAttribute="bottom" constant="11.5" id="qLt-eB-lKp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5PI-kL-maa" secondAttribute="bottom" constant="50" id="sAT-tF-GZC"/>
+                            <constraint firstItem="aAM-vY-avd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="txC-RK-3cu"/>
+                            <constraint firstItem="dlV-PL-xlx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wCf-ke-2cJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPg-28-709" secondAttribute="trailing" constant="8" id="wLI-0b-DpH"/>
+                            <constraint firstItem="dlV-PL-xlx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wUu-Ov-Y5k"/>
+                            <constraint firstItem="ljD-ee-aS8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zK1-gN-Rug"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberTotalLabel" destination="ljD-ee-aS8" id="Vvj-Mz-25g"/>
+                        <outlet property="numerologyTotalLabel" destination="6Za-GT-UjH" id="Szo-jL-T9g"/>
+                        <outlet property="wordInputTextFeild" destination="JPg-28-709" id="Me2-c5-Mv0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wavebackground" width="375" height="500"/>
+    </resources>
 </document>

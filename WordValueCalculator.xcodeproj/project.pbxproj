@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,9 @@
 		75532C9227E86D6B00340227 /* WordValueCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532C9127E86D6B00340227 /* WordValueCalculatorTests.swift */; };
 		75532C9C27E86D6B00340227 /* WordValueCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532C9B27E86D6B00340227 /* WordValueCalculatorUITests.swift */; };
 		75532C9E27E86D6B00340227 /* WordValueCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532C9D27E86D6B00340227 /* WordValueCalculatorUITestsLaunchTests.swift */; };
-		98FF184BF1D91BD4A889929D /* Pods_WordValueCalculator_WordValueCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1A193D0A36929D20D69917 /* Pods_WordValueCalculator_WordValueCalculatorUITests.framework */; };
-		A271F7EF3F7C3BA732D249DA /* Pods_WordValueCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9299D552700669911DA4B33A /* Pods_WordValueCalculatorTests.framework */; };
-		E29F81819BE0208956CB5CBC /* Pods_WordValueCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EA0329B6B0AD1D50D95208 /* Pods_WordValueCalculator.framework */; };
+		75532CFF27EDB25500340227 /* numberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532CFE27EDB25500340227 /* numberDetailViewController.swift */; };
+		75532D0127EDC9F200340227 /* numeroSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532D0027EDC9F200340227 /* numeroSingleton.swift */; };
+		75532D0327EDE27100340227 /* infoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532D0227EDE27100340227 /* infoPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,26 +39,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		75532CC627EA424600340227 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		00E428A10D1A11D35D555945 /* Pods-WordValueCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordValueCalculator.debug.xcconfig"; path = "Target Support Files/Pods-WordValueCalculator/Pods-WordValueCalculator.debug.xcconfig"; sourceTree = "<group>"; };
-		0DD511757D652A7181DB76D4 /* Pods-WordValueCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordValueCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-WordValueCalculatorTests/Pods-WordValueCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		126A08BED72028068C8D86E0 /* Pods-WordValueCalculator-WordValueCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordValueCalculator-WordValueCalculatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordValueCalculator-WordValueCalculatorUITests/Pods-WordValueCalculator-WordValueCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C1A193D0A36929D20D69917 /* Pods_WordValueCalculator_WordValueCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordValueCalculator_WordValueCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FB1A735886CDA13E296C989 /* Pods-WordValueCalculator-WordValueCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordValueCalculator-WordValueCalculatorUITests.release.xcconfig"; path = "Target Support Files/Pods-WordValueCalculator-WordValueCalculatorUITests/Pods-WordValueCalculator-WordValueCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3B2157C600A8AD1F7B76263A /* Pods-WordValueCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordValueCalculator.release.xcconfig"; path = "Target Support Files/Pods-WordValueCalculator/Pods-WordValueCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		75532C7427E86D6900340227 /* WordValueCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordValueCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75532C7727E86D6900340227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75532C7927E86D6900340227 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +54,9 @@
 		75532C9727E86D6B00340227 /* WordValueCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordValueCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75532C9B27E86D6B00340227 /* WordValueCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordValueCalculatorUITests.swift; sourceTree = "<group>"; };
 		75532C9D27E86D6B00340227 /* WordValueCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordValueCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9299D552700669911DA4B33A /* Pods_WordValueCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordValueCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A93EEA15A3FDE6FB6CF2D799 /* Pods-WordValueCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordValueCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-WordValueCalculatorTests/Pods-WordValueCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D7EA0329B6B0AD1D50D95208 /* Pods_WordValueCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordValueCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75532CFE27EDB25500340227 /* numberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numberDetailViewController.swift; sourceTree = "<group>"; };
+		75532D0027EDC9F200340227 /* numeroSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numeroSingleton.swift; sourceTree = "<group>"; };
+		75532D0227EDE27100340227 /* infoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E29F81819BE0208956CB5CBC /* Pods_WordValueCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A271F7EF3F7C3BA732D249DA /* Pods_WordValueCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98FF184BF1D91BD4A889929D /* Pods_WordValueCalculator_WordValueCalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +91,6 @@
 				75532C9027E86D6B00340227 /* WordValueCalculatorTests */,
 				75532C9A27E86D6B00340227 /* WordValueCalculatorUITests */,
 				75532C7527E86D6900340227 /* Products */,
-				75532CAA27EA422000340227 /* Frameworks */,
-				C7362DFFBBEC8C90D465A50D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +110,9 @@
 				75532C7727E86D6900340227 /* AppDelegate.swift */,
 				75532C7927E86D6900340227 /* SceneDelegate.swift */,
 				75532C7B27E86D6900340227 /* ViewController.swift */,
+				75532CFE27EDB25500340227 /* numberDetailViewController.swift */,
+				75532D0227EDE27100340227 /* infoPageViewController.swift */,
+				75532D0027EDC9F200340227 /* numeroSingleton.swift */,
 				75532C7D27E86D6900340227 /* Main.storyboard */,
 				75532C8327E86D6B00340227 /* Assets.xcassets */,
 				75532C8527E86D6B00340227 /* LaunchScreen.storyboard */,
@@ -160,30 +139,6 @@
 			path = WordValueCalculatorUITests;
 			sourceTree = "<group>";
 		};
-		75532CAA27EA422000340227 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D7EA0329B6B0AD1D50D95208 /* Pods_WordValueCalculator.framework */,
-				2C1A193D0A36929D20D69917 /* Pods_WordValueCalculator_WordValueCalculatorUITests.framework */,
-				9299D552700669911DA4B33A /* Pods_WordValueCalculatorTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7362DFFBBEC8C90D465A50D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				00E428A10D1A11D35D555945 /* Pods-WordValueCalculator.debug.xcconfig */,
-				3B2157C600A8AD1F7B76263A /* Pods-WordValueCalculator.release.xcconfig */,
-				126A08BED72028068C8D86E0 /* Pods-WordValueCalculator-WordValueCalculatorUITests.debug.xcconfig */,
-				2FB1A735886CDA13E296C989 /* Pods-WordValueCalculator-WordValueCalculatorUITests.release.xcconfig */,
-				A93EEA15A3FDE6FB6CF2D799 /* Pods-WordValueCalculatorTests.debug.xcconfig */,
-				0DD511757D652A7181DB76D4 /* Pods-WordValueCalculatorTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,12 +146,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75532CA127E86D6B00340227 /* Build configuration list for PBXNativeTarget "WordValueCalculator" */;
 			buildPhases = (
-				494C84F34F19B37A2E973FF9 /* [CP] Check Pods Manifest.lock */,
 				75532C7027E86D6900340227 /* Sources */,
 				75532C7127E86D6900340227 /* Frameworks */,
 				75532C7227E86D6900340227 /* Resources */,
-				75532CC627EA424600340227 /* Embed Frameworks */,
-				12C91FBCC64E850C27A5C4D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,7 +163,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75532CA427E86D6B00340227 /* Build configuration list for PBXNativeTarget "WordValueCalculatorTests" */;
 			buildPhases = (
-				4180C08379EE478AC7E90534 /* [CP] Check Pods Manifest.lock */,
 				75532C8927E86D6B00340227 /* Sources */,
 				75532C8A27E86D6B00340227 /* Frameworks */,
 				75532C8B27E86D6B00340227 /* Resources */,
@@ -230,11 +181,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75532CA727E86D6B00340227 /* Build configuration list for PBXNativeTarget "WordValueCalculatorUITests" */;
 			buildPhases = (
-				815701FFE296E6B0D5EB43F7 /* [CP] Check Pods Manifest.lock */,
 				75532C9327E86D6B00340227 /* Sources */,
 				75532C9427E86D6B00340227 /* Frameworks */,
 				75532C9527E86D6B00340227 /* Resources */,
-				4B4D647A6200127BFF4F76F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,7 +219,7 @@
 				};
 			};
 			buildConfigurationList = 75532C6F27E86D6900340227 /* Build configuration list for PBXProject "WordValueCalculator" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -316,118 +265,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		12C91FBCC64E850C27A5C4D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WordValueCalculator/Pods-WordValueCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WordValueCalculator/Pods-WordValueCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordValueCalculator/Pods-WordValueCalculator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4180C08379EE478AC7E90534 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WordValueCalculatorTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		494C84F34F19B37A2E973FF9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WordValueCalculator-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4B4D647A6200127BFF4F76F3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WordValueCalculator-WordValueCalculatorUITests/Pods-WordValueCalculator-WordValueCalculatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WordValueCalculator-WordValueCalculatorUITests/Pods-WordValueCalculator-WordValueCalculatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordValueCalculator-WordValueCalculatorUITests/Pods-WordValueCalculator-WordValueCalculatorUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		815701FFE296E6B0D5EB43F7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WordValueCalculator-WordValueCalculatorUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		75532C7027E86D6900340227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75532D0327EDE27100340227 /* infoPageViewController.swift in Sources */,
 				75532C7C27E86D6900340227 /* ViewController.swift in Sources */,
 				75532C7827E86D6900340227 /* AppDelegate.swift in Sources */,
 				75532C8227E86D6900340227 /* WordValueCalculator.xcdatamodeld in Sources */,
+				75532CFF27EDB25500340227 /* numberDetailViewController.swift in Sources */,
 				75532C7A27E86D6900340227 /* SceneDelegate.swift in Sources */,
+				75532D0127EDC9F200340227 /* numeroSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,15 +450,16 @@
 		};
 		75532CA227E86D6B00340227 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E428A10D1A11D35D555945 /* Pods-WordValueCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F3567NMCWM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WordValueCalculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NumeroCalc;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -621,9 +471,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = yashrrajsood.WordValueCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -632,15 +484,16 @@
 		};
 		75532CA327E86D6B00340227 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B2157C600A8AD1F7B76263A /* Pods-WordValueCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F3567NMCWM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WordValueCalculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NumeroCalc;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -652,9 +505,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = yashrrajsood.WordValueCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -663,7 +518,6 @@
 		};
 		75532CA527E86D6B00340227 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A93EEA15A3FDE6FB6CF2D799 /* Pods-WordValueCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -684,7 +538,6 @@
 		};
 		75532CA627E86D6B00340227 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD511757D652A7181DB76D4 /* Pods-WordValueCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -705,7 +558,6 @@
 		};
 		75532CA827E86D6B00340227 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 126A08BED72028068C8D86E0 /* Pods-WordValueCalculator-WordValueCalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -724,7 +576,6 @@
 		};
 		75532CA927E86D6B00340227 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB1A735886CDA13E296C989 /* Pods-WordValueCalculator-WordValueCalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

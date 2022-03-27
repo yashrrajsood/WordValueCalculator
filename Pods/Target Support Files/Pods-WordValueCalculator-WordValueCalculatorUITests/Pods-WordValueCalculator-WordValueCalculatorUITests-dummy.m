@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_WordValueCalculator_WordValueCalculatorUITests : NSObject
-@end
-@implementation PodsDummy_Pods_WordValueCalculator_WordValueCalculatorUITests
-@end
